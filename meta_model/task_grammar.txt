@@ -1,0 +1,40 @@
+# Tabletop Domain Grammar
+# Based on meta_model/system_model.pl
+
+# Program structure
+Program ::= Action
+
+Program ::= Action ; Program
+
+# {max_step: 1}
+Program ::= if Cond then Program else Program
+
+# Actions
+Action ::= put Movable Container
+Action ::= open HasDoor
+Action ::= close HasDoor
+Action ::= turn_on HasRunningState
+
+# Conditions
+Cond ::= loc Movable Container
+Cond ::= door_open HasDoor
+{max_step: 1}
+Cond ::= neg Cond
+
+# Object types - each can only be used once
+Movable ::= bread
+Movable ::= fruit
+Movable ::= vegetable
+Movable ::= plate
+
+Container ::= plate
+Container ::= microwave
+Container ::= cabinet
+Container ::= drawer
+Container ::= basket
+
+HasDoor ::= microwave
+HasDoor ::= cabinet
+HasDoor ::= drawer
+
+HasRunningState ::= microwave
