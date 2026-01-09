@@ -1,6 +1,6 @@
 # Validating Generalist Robots with Situation Calculus and STL Falsification
 
-This testing framework for generalist robotic systems combines abstract reasoning with concrete system falsification. It integrates the NVIDIA Isaac GR00T N1.5 foundation model with the RoboCasa simulation environment to enable systematic testing of robot behaviors.
+This validation framework for generalist robotic systems combines abstract reasoning with concrete system falsification. It has integrated the NVIDIA Isaac GR00T N1.5 model with the RoboCasa simulation environment.
 
 ## Project Structure
 
