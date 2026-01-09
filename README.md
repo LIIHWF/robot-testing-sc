@@ -10,7 +10,8 @@ robot-testing-sc/
 ├── concrete_layer/          # Concrete test execution layer
 ├── meta_model/              # Domain models and task grammar definitions
 ├── robot_controller/        # GR00T N1.5 robot controller integration
-├── robocasa/  # RoboCasa-based simulation environment
+├── robocasa_gr1/            # RoboCasa simulation environment
+├── robosuite_gr1/           # Robosuite simulation library
 └── scripts/                 # Main execution scripts
 ```
 
@@ -18,7 +19,7 @@ robot-testing-sc/
 
 - **Meta Model**: Defines the task grammar and system model using situation calculus, specifying actions, objects, and relations.
 
-- **Abstract Layer**: Generates valid abstract test configurations for task and initial world state using combinatorial testing.
+- **Abstract Layer**: Generates valid abstract test configurations for the task and initial world state using combinatorial testing.
 
 - **Concrete Layer**: Instantiates abstract configurations into concrete test cases and executes them in simulation with STL falsification.
 
